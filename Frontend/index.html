@@ -18,11 +18,45 @@
        
        
     </div>
-    <div>
+   
+    <!-- form for sign up and login -->
 
-        <button class="button1">Sign In</button>
-        <button class="button2">Register</button>
+    <div>
+      <button class="button1" onclick="showSignIn()">Sign In</button>
+      <button class="button2" onclick="showRegister()">Register</button>
     </div>
+    
+    <div id="signInForm" class="popup-form">
+      <div class="form-content">
+        <h2>Welcome Back!</h2>
+        <h2>Sign In</h2>
+        <form>
+          <label for="email">RegNo:</label>
+          <input type="text" id="email" placeholder="Enter your RegNo" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter your password" required />
+          <button type="submit" class="submit_btn">Sign In</button>
+          <button type="button" class="close-btn" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="registerForm" class="popup-form">
+      <div class="form-content">
+        <h2>Register</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <label for="email-register">RegNo:</label>
+          <input type="email" id="email-register" placeholder="Enter your RegNo" required />
+          <label for="password-register">Password:</label>
+          <input type="password" id="password-register" placeholder="Enter your password" required />
+          <button type="submit" class="submit_btn">Register</button>
+          <button type="button" class="close-btn" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+    
 </nav>
 <!-- section 1 -->
 
@@ -208,7 +242,7 @@
   </footer>
   
 
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
